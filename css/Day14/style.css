@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+
+.parent{
+    background-color: rgb(145, 35, 35);
+    color: rgb(226, 215, 210);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.child img{
+    width: 100px;
+    border-radius: 50%;
+    
+}
+
+.child button{
+
+    width: 70px;
+    height: 30px;
+    color: black;
+    border-radius: 30px;
+    background-color: antiquewhite;
+    transition: 1.0s;
+    border: none;
+}
+
+
+.child button:hover{
+         
+    transform: scale(1.2);
+    background-color: rgb(201, 104, 66);
+    color: aliceblue;
+
+}
+
+
+@media (max-width:600px) {
+
+    .parent{
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+
+
+
+
+.card{
+    background-color: rgb(226, 215, 210);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    
+
+}
+
+
+.cardimg img{
+    width: 150px;
+    border-radius: 10px;
+    padding: 5px;
+    height: 200px;
+   
+}
+
+.cardimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    
+    
+}
+
+
+.cardchild{
+    background-color: rgb(145, 35, 35);
+    width: 300px;
+    color: rgb(226, 215, 210);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 15px;
+    border-radius: 10px;
+    padding: 8px;
+    box-shadow: 10px 20px rgb(165, 135, 135);
+    transition: 1.5s;
+
+}
+
+.cardchild p{
+    font-size: large;
+}
+
+.cardbuy{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    justify-content: space-between;
+    background-color: azure;
+    color: brown;
+    border-radius: 5px;
+}
+
+
+.cardbuy div h4{
+    background-color: brown;
+    color: aliceblue;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+.cardchild:hover{
+
+    transform: translateY(15px)
+}
+
+
+.new{
+    position: relative;
+    bottom: 200px;
+    left: 230px;
+
+}

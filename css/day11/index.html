@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        * {
+            margin: 0%;
+
+        }
+
+        .parent {
+
+            background-color: rgb(124, 45, 45);
+            color: antiquewhite;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 33.5%;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .child img {
+            width: 120px;
+        }
+
+        .child a {
+            color: antiquewhite;
+            text-decoration: none;
+
+
+        }
+
+        .child link {
+
+            display: flex;
+            justify-content: space-between;
+            font-size: 100px;
+
+        }
+
+        .child {
+
+
+            padding: 10px;
+
+            display: flex;
+            gap: 20px;
+        }
+
+        .child h1 {
+            font-size: 50px;
+        }
+
+        .cardgroup{
+            display: flex;
+            background-color: antiquewhite;
+            padding: 30px;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .card{
+            background-color: rgb(214, 98, 98);
+            padding: 10px;
+            border-radius: 10%;
+            
+           
+           justify-content: center;
+           align-items: center;
+           
+        }
+
+
+         .card img{
+            width: 250px;
+            border-radius: 10%;
+
+        }
+
+        .gallerychild img{
+            width: 300px;
+            
+
+
+        }
+        
+        .galleryparent{
+            background-color: rgb(207, 94, 94);
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            border-radius: 3%;
+            gap: 10px;
+        }
+
+        .gallerychild{
+            
+            padding: 20px;
+            
+        }
+      
+    </style>
+
+</head>
+
+<body>
+    <header class="parent">
+        <div class="child"><img src="src/icon.png" alt=""></div>
+        <div class="child">
+            <h1>InfoWeb</h1>
+        </div>
+        <div class="child">
+            <div class="link">
+                <a href="">Home</a>
+            </div>
+            <div class="link"> <a href="">about</a></div>
+
+        </div>
+    </header>
+
+    <main class="cardgroup">
+        <div class="card">
+            <img src="src/2.jpg" alt="">
+
+            <h2>sport</h2>
+            <br>
+            <p>description</p>
+            <br>
+            <p><b>price</b></p>
+
+            <br>
+            <input type="button" value="play">
+
+        </div>
+        <div class="card">
+            <img src="src/7.jpg" alt="">
+            <br>
+            <h2>sport</h2>
+            <br>
+            <p>description</p>
+            <br>
+            <p><b>price</b></p>
+            <br>
+            <input type="button" value="play">
+        </div>
+        <div class="card">
+            <img src="src/8.jpg" alt="">
+            <br>
+            <h2>sport</h2>
+            <br>
+            <p>description</p>
+            <br>   
+            <p><b>price</b></p>
+            <br>
+            <input type="button" value="play">
+        </div>
+         <div class="card">
+            <img src="src/9.jpg" alt="">
+            <br>
+            <h2>sport</h2>
+            <br>
+            <p>description</p>
+            <br>        
+            <p><b>price</b></p>
+            <br>
+            <input type="button" value="play">
+        </div>
+
+    </main>
+
+    <div class="galleryparent">
+        <div class="gallerychild"><img src="src/gallery/1.jpg" alt=""></div>
+        <div class="gallerychild"><img src="src/gallery/3.jpg" alt=""></div>
+        <div class="gallerychild"><img src="src/gallery/4.jpg" alt=""></div>
+        <div class="gallerychild"><img src="src/gallery/5.jpg" alt=""></div>
+        <div class="gallerychild"><img src="src/gallery/6.jpg" alt=""></div>
+        <div class="gallerychild"><img src="src/gallery/7.jpg" alt=""></div>
+    </div>
+
+</body>
+
+</html>

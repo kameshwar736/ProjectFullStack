@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="../Day8/img/logo.png" alt="LOGO" width="200">
+            <br>
+            <h1>GAMES INFO</h1>
+
+        </div>
+        <hr>
+        <nav>
+            <a href="../Day8/webpage.html">HOME</a>|
+            <a href="../Day8/register.html">REGISTER</a>|
+            <a href="../Day8/stream.html">STREAM</a>
+
+        </nav>
+        <hr>
+
+    </header>
+    <main>
+        <section>
+            <h2>TORNAMENT REGISTER</h2>
+            <div>
+                <form action="" method="post">
+                    <table>
+                        <tr>
+                            <td><label>Name</label></td>
+                            <td><input type="text" placeholder="Start with Cap" required></td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="">Mobile</label>
+                            </td>
+                            <td>
+                                <input type="tel" maxlength="10" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="">Select Game</label></td>
+                            <td>
+                                <input type="radio" name="game">PUBG
+                                <input type="radio" name="game">FREEFIRE
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="">Team name</label>
+                            </td>
+                            <td><input type="text" required></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label> team Mode</label>
+
+                            </td>
+                            <td>
+                                <select>
+                                    <option value="" selected disabled> SELECT</option>
+                                    <option value="solo">solo</option>
+                                    <option value="Duo">Duo</option>
+                                    <option value="squad">Squad</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="submit" value="Register"><input type="reset"></td>
+                        </tr>
+
+                    </table>
+                </form>
+            </div>
+        </section>
+    </main>
+    <br>
+    <hr>
+    <footer>
+        COPYRIGHT @2026-GAMINGINFO
+    </footer>
+</body>
+
+</html>

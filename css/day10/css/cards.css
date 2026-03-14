@@ -1,0 +1,19 @@
+.parent{
+    margin-top: 20px;
+    
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20%;
+    background-color: aquamarine;
+
+}
+.child img{
+    width: 250px;
+    border-radius: 5%;
+
+}
+.child h2{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

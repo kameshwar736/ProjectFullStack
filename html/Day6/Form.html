@@ -1,0 +1,150 @@
+<html>
+    <head>
+        <title>form</title>
+    </head>
+    <body><center>
+        <H1>SPORT CLUB TRAINER FORM</H1>
+        <br>
+        <hr>
+
+        <form>
+            <table>
+                <tbody>
+                    <tr>
+                        <td><label for="Name">NAME</label></td>
+                        <td><input id="Name" type="text" placeholder="Start with cap" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Phone">MOBILE NO</label></td>
+                        <td><input type="tel"  id="Phone" maxlength="10" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="dob">D.O.B</label></td>
+                        <td><input type="date" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="age">AGE</label></td>
+                        <td><input type="number" id="age" min=18 max=50 required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="loc">CITY</label></td>
+                        <td><input type="text" id="loc" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="edu">HIGHEST QUALIFICATION</label></td>
+                        <td>
+                            <select id="edu" required>
+                                <option value="" selected disabled>choose here</option>
+                                <option value="Diplomo">Diplomo</option>
+                                <option value="UG">UG</option>
+                                <option value="PG">PG</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="extracur">AREA OF INTEREST</label></td>
+                        <td>
+                            <fieldset>
+                                <legend> SELECT YOUR SPORTS</legend>
+                            <input type="radio" id="extracur" name="sport">Circket
+                            <input type="radio" id="extracur" name="sport">Football
+                            <input type="radio" id="extracur" name="sport">Volleyball
+                            <input type="radio" id="extracur" name="sport">tennis
+                                </fieldset>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="certificates">HAVE ANY CERTIFICATION OR ACHIEVEMENT</label>
+                        </td>
+                        <td>
+                            <input type="radio" id="certificates" name="?">Yes
+                            <input type="radio" id="certificates" name="?">NO
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="upload">UPLOAD CERTIFICATES IF Yes</label></td>
+                    
+                        <td><input type="file"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="lan">LANGUAGE KNOWN</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="language" id="">Tamil
+                            <input type="checkbox" name="language" id="">English
+                            <input type="checkbox" name="language" id="">Hindi
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="add">ADDRESS</label></td>
+                        <td><textarea name="" id="add"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit"><input type="reset"></td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+        </form>
+        <hr>
+        <h2>FORM DETAILS</h2>
+        <table border="1">
+            <thead>
+                <th>Name</th>
+                <th>Mobile no</th>
+                <th>DOB</th>
+                <th>Age</th>
+                <th>City</th>
+                <th>Qualification</th>
+                <th>Interest</th>
+                <th>certificates or Achive</th>
+                <th>language</th>
+                <th>Address</th>
+            </thead>
+            <tbody >
+                <tr>
+                    <td>Kamesh</td>
+                    <td>8804567895</td>
+                    <td>07/03/2006</td>
+                    <td>20</td>
+                    <td>Chennai</td>
+                    <td>UG</td>
+                    <td>Football</td>
+                    <td>YES</td>
+                    <td>Tamil,English</td>
+                    <td>Thiruvottiyur Chennai</td>
+                </tr>
+                <tr>
+                    <td>Sai</td>
+                    <td>8256489731</td>
+                    <td>21/06/2005</td>
+                    <td>22</td>
+                    <td>Chennai</td>
+                    <td>UG</td>
+                    <td>Circket</td>
+                    <td>YES</td>
+                    <td>Tamil,English</td>
+                    <td>Central Chennai</td>
+                </tr>
+                <tr>
+                    <td>Jayanth</td>
+                    <td>7656489731</td>
+                    <td>15/11/2005</td>
+                    <td>22</td>
+                    <td>Chennai</td>
+                    <td>UG</td>
+                    <td>Tennis</td>
+                    <td>YES</td>
+                    <td>Tamil,English</td>
+                    <td>Anna Nagar Chennai</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        </center>
+    </body>
+</html>

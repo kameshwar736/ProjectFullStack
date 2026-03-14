@@ -1,0 +1,82 @@
+.submit {
+    background-color: rgba(31, 182, 182, 0.301);
+
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 200px
+}
+
+.submit button {
+    background-color: rgb(46, 53, 203);
+
+    color: antiquewhite;
+    transition: 2s;
+}
+
+.submit button:hover {
+    background-color: rgb(185, 79, 58);
+    color: rgb(226, 224, 221);
+    transform: scale(1.5)
+}
+
+.pic{
+    background-color: rgb(176, 131, 62);
+    padding: 10px;
+    border-radius: 5px;
+    width: 350px;
+}
+
+.pic img{
+    width: 300px;
+    border-radius: 5px;
+    transition: 1.5s;
+}
+
+.pic img:hover{
+    transform: scale(2.0);
+}
+
+
+
+.effectparent{
+    background-color: rgb(187, 180, 113);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+
+.effectchild{
+    padding: 10px;
+    background-color: azure;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+   
+
+}
+.effectchild img{
+
+    width: 300px;
+    border-radius: 8px ;
+
+}
+
+.effectchild:hover{
+    transform: translate(0px,50px);
+     background-color: rgb(77, 160, 102);
+
+}
+
+.effectchild h1::after{
+    content:" order now";
+    color: rgb(231, 19, 19);
+}
+
