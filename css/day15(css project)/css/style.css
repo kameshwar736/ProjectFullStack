@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    background-color: black;
+    color: white;
+    gap: 10px;
+}
+
+.navbar {
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 30px;
+
+}
+
+.navbar img{
+    width: 100px;
+}
+
+.navbar h4 {
+    position: relative;
+    right: 120px;
+}
+
+.headlink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.headlink img {
+    width: 50px;
+    border-radius: 50px;
+}
+
+.headlink link a {
+    text-decoration: none;
+}
+
+
+.banner {
+    width: 1350px;
+    height: 600px;
+    border-radius: 20px;
+}
+
+
+.cards {
+    height: 300px;
+    width: 300px
+}
