@@ -1,56 +1,58 @@
 <script>
-     // array
+    // array
     let arrSingle = ["product", 34, "loc"]
     console.log(arrSingle);//get all arr data
     console.log(arrSingle[1]); // particular arr data 
 
     //multiple array
-    let arrValue = ["name", 19, "chennai", ["ID", 234, "class"], ["Roll",098, "address"]]
+    let arrValue = ["name", 19, "chennai", ["ID", 234, "class"], ["Roll", 98, "address"]]
     console.log(arrValue[3][2], arrValue[4][2]);
 
     //nested arr
 
-    let arrNested = ["Game Name",010, ["user name", 567, "god of war", ["Char Name", "last CheckPoint", 10]]]
+    let arrNested = ["Game Name", 123 ["user name", 567, "god of war", ["Char Name", "last CheckPoint", 10]]]
     console.log(arrNested);
     console.log(arrNested[2][3][2]);
 
 
     //object
 
-    let objSample = { name : "Kamesh",age : 19, class : "fs"}
+    let objSample = { name: "Kamesh", age: 19, class: "fs" }
     console.log(objSample); // for get all obj data
     console.log(objSample.class);//use . notation to get the specific data
 
 
     // arrays of object
 
-    let arrObject = [{name : " KAMESHWAR", Qual : "B.Sc",id : 23013},{name : "SAI", Qual : "B.Sc",id : 23014},{name : "Sakthi", Qual : "B.Sc",id : 23015}]
+    let arrObject = [{ name: " KAMESHWAR", Qual: "B.Sc", id: 23013 }, { name: "SAI", Qual: "B.Sc", id: 23014 }, { name: "Sakthi", Qual: "B.Sc", id: 23015 }]
     console.log(arrObject[2].id); // get data by index value and . notation for arrays of object
-    
+
     //Function
 
     // es1-5 function
-    
-    function sum(a,b) {     //inside a bracket is parameter                
+
+    function sum(a, b) {     //inside a bracket is parameter                
         console.log("this es 5 function");
-        console.log("Sum of A & B",a+b);
+        console.log("Sum of A & B", a + b);
     }
 
-   sum(5,4)// inside the bracket is argument
+    sum(5, 4)// inside the bracket is argument
 
     // anonymous Function
 
-    let anonFunc = function (){console.log("i am anon");}
+    let anonFunc = function () { console.log("i am anon"); }
 
     anonFunc()
 
 
     // arrow func
 
-    let arrowFunc = () =>     console.log("Iam Arrow function");
+    let arrowFunc = () => console.log("Iam Arrow function");
+
+
+    arrowFunc()
+
 
     
-    arrowFunc()
-    
-    
+
 </script>
