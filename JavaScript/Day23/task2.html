@@ -1,0 +1,49 @@
+<script>
+
+    let getMark1 = 56
+    let getMark2 = 98
+    let getMark3 = 90
+    let getMark4 = 78
+    let getMark5 = 67
+
+    let totalMark = getMark1 + getMark2 + getMark3 + getMark4 + getMark5
+
+    let averageTotal = totalMark / 5
+
+    console.log("Total Mark:", totalMark);
+    console.log("Average:", averageTotal);
+
+
+
+    if (averageTotal >= 90 && averageTotal <= 100) {
+        console.log("A");
+
+    }
+    else if (averageTotal >= 80 && averageTotal <= 90) {
+        console.log("B");
+
+    }
+    else if (averageTotal >= 70 && averageTotal <= 80) {
+        console.log("C");
+
+    }
+    else {
+        console.log("E");
+
+    }
+
+
+    // random number
+
+   
+    // give attempt
+  
+    let ranGuess = Math.floor(Math.random()*10)+1;
+    let inputGuess = Number(prompt());
+    for(let a=inputGuess;a===ranGuess;a++){
+        console.log(ranGuess);
+        
+    }
+
+
+</script>
