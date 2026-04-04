@@ -37,7 +37,30 @@
 
    
     // give attempt
-  
+    
+    let ranNum = Math.floor(Math.random()*10)+1
+    let count=0
+    //give chance using for loop
+
+    for(let a = 1;a<=100;a++){
+        console.log("attempt:",count);
+        
+        let inputNum =Number(prompt())
+        if (inputNum===ranNum) {
+
+             console.log("you are right:",ranNum);
+              break
+        }
+       
+        else{
+            console.log("OOPS ! try again:",)
+            count+=1
+        }
+
+        
+    }
+
+
     let ranGuess = Math.floor(Math.random()*10)+1;
     let inputGuess = Number(prompt());
     for(let a=inputGuess;a===ranGuess;a++){
