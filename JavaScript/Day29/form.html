@@ -51,15 +51,20 @@
     <script>
         let btn = document.getElementById("btn")
 
-        let userDetail = []
+        
 
         btn.addEventListener("click",(e)=>{
             e.preventDefault()
             let name = document.getElementById("name").value
             let mobile  = document.getElementById("mobile").value
             let form = document.getElementById("form")
+
+            let userDetail = JSON.parse(localStorage.getItem("register")) || []
             let data = {name,mobile}
             userDetail.push(data)
+
+            console.log(userDetail);
+            
 
             let changeData = JSON.stringify(userDetail);
 
@@ -70,7 +75,7 @@
             
             
 
-
+            form.reset()
 
 
 
