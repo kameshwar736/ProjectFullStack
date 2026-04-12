@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch</title>
+
+
+    <style>
+        .head {
+            display: flex;
+            justify-content: center;
+            color: gray;
+        }
+
+
+        .parent {
+            background-color: rgb(197, 171, 171);
+            padding: 10px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="head">Fetch API using - to showing the Product Cards</h1>
+    <div id="dom">
+        <div class="parent">
+            <div>
+                <img src="" alt="" style="width: 50px;">
+                <h3>Product</h3>
+            </div>
+            <div>
+                <div style="display: flex; flex-direction: row; row-gap: 40px;">
+                    <p>$1000</p>
+                    <button>Buy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
+
+
+
+
+
+
+<script>
+
+
+    const searchData = async () => {
+
+        let getData = await fetch("https://dummyjson.com/products");
+        let stringData = await getData.json()
+        let finalProduct = stringData.products
+        let dom = document.getElementById("dom")
+        dom.innerHTML=""
+
+        finalProduct.forEach((value,index) => {
+
+            let newStyle = 
+            `
+            <div id="dom">
+                    <div class="parent">
+                        <div>
+                            <img src="${value.images}" alt="" style="width: 50px;">
+                                <h3>${value.title}</h3>
+                        </div>
+                        <div>
+                            <div style="display: flex; flex-direction: row; row-gap: 40px;">
+                                <p>$1000</p>
+                                <button>Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `
+
+            
+                dom.innerHTML += newStyle
+            
+            
+            
+        });
+        
+        
+          
+    
+
+
+        
+
+       
+    }
+    searchData()
+
+
+</script>
+
+</html>
