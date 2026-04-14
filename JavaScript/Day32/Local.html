@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+</head>
+<body>
+
+
+    <div>
+        <h2>Sign Up here</h2>
+        <form action="">
+            <input type="text" placeholder="Enter The Name" id="name">
+            <input type="email" placeholder="Enter the Email" id="mail">
+            <input type="password" placeholder="Enter the password" id="pass">
+
+            <button id="btnSubmit">Register</button>
+
+
+        </form>
+    </div>
+
+    
+    <script>
+
+        let btnSubmit = document.getElementById("btnSubmit")
+
+        btnSubmit.addEventListener("click",()=>{
+
+            let name = document.getElementById("name").value;
+            let mail = document.getElementById("mail").value;
+            let pass = document.getElementById("pass").value;
+
+
+            let userDetail = JSON.parse(localStorage.getItem("userDetail")) || [];
+            let newUser = {name,mail,pass}
+            userDetail.push(newUser)
+            localStorage.setItem("ecomRegister",JSON.stringify(userDetail))
+            alert("success")
+
+            
+            
+           
+
+
+        })
+
+
+    </script>
+</body>
+</html>
