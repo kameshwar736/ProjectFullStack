@@ -44,14 +44,14 @@
             let link = document.getElementById("link")
 
             let checkData = JSON.parse(localStorage.getItem("ecomRegister"))
-            let isActive = [{status : false}]
+            let isActive = {status : false}
 
 
 
             if (checkData.find(check => check.mail == mailSignin && check.pass == passSignin)) {
                 alert("Success")
                 link.href = "../Day31/fetch.html"
-                isActive = [{status : true}]
+                isActive = {status : true}
 
                 localStorage.setItem("Status", JSON.stringify(isActive))
 
