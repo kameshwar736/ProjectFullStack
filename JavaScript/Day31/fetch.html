@@ -32,6 +32,7 @@
 
 <body style="background-color: black;">
     <h1 class="head">Fetch API using - to showing the Product Cards</h1>
+    <button><a href="../Day32/login.html" id="lo">Log Out</a></button>
     <div  id = "dom" style="display: grid; grid-template-columns: repeat(3,1fr); place-items: center; gap: 30px;">
 
        
@@ -49,7 +50,22 @@
 <script>
 
 
-    const searchData = async () => {
+
+    let isActive =JSON.parse(localStorage.getItem("Status")) || []
+    console.log(isActive);
+    
+   
+    
+    
+    if(isActive[0].status==true){
+
+
+
+        
+    document.addEventListener("DOMContentLoaded",()=>{
+
+
+        const searchData = async () => {
 
         let getData = await fetch("https://dummyjson.com/products");
         let stringData = await getData.json()
@@ -88,6 +104,9 @@
             
         });
         
+
+        
+        
         
           
     
@@ -99,6 +118,28 @@
     }
     searchData()
 
+
+    })
+    
+
+
+    }
+
+
+    else{
+
+        alert("unauthorized access")
+    }
+
+    let logOut = document.getElementById("lo")
+
+    lo.addEventListener("click",()=>{
+
+       isActive = [{status : false}]
+
+        localStorage.setItem("Status", JSON.stringify(isActive))
+    })
+    
 
 </script>
 
