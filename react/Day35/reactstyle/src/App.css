@@ -1,0 +1,36 @@
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+
+}
+
+
+.rootdiv{
+   background-color:rgb(15, 6, 6);
+   padding: 20px;
+
+   color: aliceblue;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   justify-content: space-between;
+
+}
+
+.lidiv{
+
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+
+
+}
+
+.image img{
+  
+  width: 300px;
+  padding: 30px;
+  
+  justify-content: center;
+}
