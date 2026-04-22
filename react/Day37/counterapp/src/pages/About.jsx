@@ -2,7 +2,7 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div className='text-6xl flex justify-center p-10 bg-red-200'>About</div>
+    <div>About</div>
   )
 }
 

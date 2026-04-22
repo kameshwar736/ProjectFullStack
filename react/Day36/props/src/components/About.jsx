@@ -1,12 +1,13 @@
 import React from 'react'
+import Home from './Home'
+const About = () => {
 
-const About = ({sending}) => {
-
-    console.log(sending);
+    const data = "Narayana"
     
   return (
     <>
-    <h1>{sending}</h1>
+    <h1>{data}</h1>
+    <Home sending = {data}/>
     
     </>
   )

@@ -1,13 +1,19 @@
 import React from 'react'
-import About from './About'
+// import About from './About'
 
-const Home = () => {
+const Home = ({sending}) => {
 
-    const userName = "react"
+    const userName = "Python"
+    console.log(userName);
+    console.log(sending);
+    
+    
+    
   return (
    <>
-
-   <About  sending={userName}/>
+    
+    
+   <h1>{userName}{sending}</h1>
    </>
   )
 }

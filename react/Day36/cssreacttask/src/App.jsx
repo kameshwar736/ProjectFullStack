@@ -4,6 +4,7 @@ import { Route, Routes } from 'react-router-dom'
 
 import About from './pages/About'
 import Profile from './pages/Profile'
+import Home from './pages/Home'
 
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
       
       <Route path='/' element={<About/>}/>
       <Route path='/Profile' element={<Profile/>}/>
+      <Route path='/Home' element={<Home/>}/>
     </Routes>
 
    

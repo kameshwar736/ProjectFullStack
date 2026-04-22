@@ -13,7 +13,7 @@ const Navbar = () => {
                 </div>
                 <div className='flex justify-evenly bg-red-100 w-80 '>
 
-                
+                <Link to="/Home">Home</Link>
                 <Link to="/">About</Link>
                 <Link to="/Profile">Profile</Link>
 
