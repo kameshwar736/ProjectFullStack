@@ -51,3 +51,8 @@ INSERT INTO candidates (candidate_name , candidate_age , candidate_mobile_number
 INSERT INTO candidates (candidate_name , candidate_age , candidate_mobile_number , candidate_party_name , candidate_constitution) VALUES ( "Revanth" , "34" , "987456321" , "TVK" , "Maduravoyal") , ( "Seeman" , "56" , "897397865" , "NTK" , "Madurai west") ;
 
 INSERT INTO candidates (candidate_name , candidate_age , candidate_mobile_number , candidate_party_name , candidate_constitution) VALUES ("Sankar" , "54" , "875963245" , "DMK" , "Royapuram");
+
+DELETE FROM candidates where candidate_id = 8;
+
+UPDATE candidates set candidate_party_name = "TVK" WHERE candidate_id = 2 ;
+
